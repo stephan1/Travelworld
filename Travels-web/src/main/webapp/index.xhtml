@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:head>
+        <title>worldtravel.com - the best ever </title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/layout.css" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+        <script type="text/javascript" src="js/jquery-1.10.2.js" ></script>
+        <script type="text/javascript" src="js/cufon-yui.js"></script>
+        <script type="text/javascript" src="js/cufon-replace.js"></script>  
+        <script type="text/javascript" src="js/Myriad_Pro_600.font.js"></script>
+         
+
+       <script>
+$(function() {
+$( "#tabss" ).tabs();
+});
+</script>
+    </h:head>
+    <h:body id="page1">
+        <div  class="extra">
+            <div class="main">
+                <header>
+                    <div class="wrapper">
+                        <h1><a href="index.xhtml" id="logo">Around the World</a></h1>
+                        <div class="left">
+                            <div class="wrapper">
+                                <div class="search-bar">
+                                    <h:form id="search" >
+							<div class="bg">
+                                                            
+                                                            <h:commandButton type="submit" styleClass="submit" value="" />
+                                                            <h:inputText />
+                                                            
+							</div>
+						</h:form>
+                                </div>
+                               
+                                
+                            </div>
+                    </div>
+                        <div class="right">
+                        <div class="wrapper">
+                            <nav>
+                                    <ul id="top_nav">
+                                        <li><a href="#"><b>Register</b></a></li>
+                                        <li><a href="#"><b>Log In</b></a></li>
+                                        <li><a href="#"><b>My account</b></a></li>
+							</ul>
+                                </nav>
+                        </div>
+                    </div>
+                        
+                    </div>
+                    <nav>
+				<ul id="menu">
+					<li><a href="index.html" class="nav1">Home</a></li>
+					<li><a href="About.html" class="nav2">About Us </a></li>
+					<li><a href="Tours.html" class="nav3">Our Tours</a></li>
+					<li><a href="Destinations.html" class="nav4">Destinations</a></li>
+					<li class="end"><a href="Contacts.html" class="nav5">Contacts</a></li>
+				</ul>
+			</nav>
+                   <article class="col1">
+                       <h:form>
+                          
+                           <p:tabView cache="false"  dynamic="true" styleClass=" col1"  >
+                               <p:tab id="tab1" title="Fligh" >
+                                   <h:selectOneRadio id="options1" value="" styleClass="radio">
+                                                <f:selectItem itemLabel="Round trip &nbsp; &nbsp;" itemValue="1"  /> 
+                                                <f:selectItem itemLabel="One way &nbsp; &nbsp;" itemValue="2" />
+                                                       </h:selectOneRadio>
+                                   <h:panelGrid columns="2" cellspacing="3">
+                                       
+                                       <h:outputLabel value="From :"/>
+                                       <h:inputText/>
+                                       <h:outputText value="To :"/>
+                                       <h:inputText/>
+                                       
+                                       <h:outputLabel value="Depart "/>
+                                       <h:inputText />
+                                       
+                                   </h:panelGrid>
+                                   
+                                   
+                               </p:tab>
+                               <p:tab title="Hotels">
+                                   
+                               </p:tab>
+                               <p:tab title="Cars">
+                                   
+                               </p:tab>
+                           </p:tabView>
+                       </h:form>  
+  
+
+                 </article>    
+                    <article class="col1 pad_left1">
+				<div class="text">
+					<img src="images/text1.jpg" alt=""/>
+					<h2>The Best Offers</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+					<a href="#" class="button">Read More</a>
+				</div>
+			</article>
+			<div class="img"><img src="images/img.jpg" alt=""/></div>
+                </header>
+            </div>
+        </div>
+    </h:body>
+        
+</html>
+
